@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { introduction } from "../resources/lib/data.js";
+import { introduction } from "@/resources/lib/data";
 
 export default function Homepage() {
   return (
