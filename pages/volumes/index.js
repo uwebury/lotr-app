@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { introduction } from "../../lib/data";
 
 export default function Navigation() {
   return (
