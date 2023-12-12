@@ -7,17 +7,22 @@ export default function Volume1() {
   );
 
   return (
-    <div>
-      <h1>{volume.title}</h1>
-      <p>{volume.description}</p>
-      <ul>
-        {volume.books.map((book, index) => (
-          <li key={book.id}>
-            {book.ordinal}: {book.title}
-          </li>
-        ))}
-      </ul>
-      <Link href="/volumes">← All Volumes</Link>
-    </div>
+    <>
+      <div>
+        <h1>{volume.title}</h1>
+        <p>{volume.description}</p>
+        <ul>
+          {volume.books.map((book, index) => (
+            <li key={book.id}>
+              {book.ordinal}: {book.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <Link href="/volumes">← All Volumes</Link>
+        <Link href="/volumes/the-two-towers"> Next volume →</Link>
+      </div>
+    </>
   );
 }
