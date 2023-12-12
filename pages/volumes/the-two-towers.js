@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { volumes } from "@/resources/lib/data";
 
 export default function Volume1() {
@@ -16,6 +17,12 @@ export default function Volume1() {
             </li>
           ))}
         </ul>
+        <Image
+          src="/images/the-two-towers.png"
+          width={140}
+          height={230}
+          alt="Book cover: The Two Towers"
+        ></Image>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Link href="/volumes/the-fellowship-of-the-ring">
